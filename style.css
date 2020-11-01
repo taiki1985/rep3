@@ -84,9 +84,6 @@ body {
   font-weight: 700;
 }
 /* メイン */
-.side-menu__title {
-  list-style: none;
-}
 .main__inner {
   display: flex;
   flex-direction: row-reverse;
@@ -103,6 +100,9 @@ body {
   padding: 20px;
   background-color: #FFFFFF;
 }
+.info__table {
+  border-collapse: collapse;
+}
 .info__title {
   margin: 0;
   font-size: 16px;
@@ -113,12 +113,16 @@ body {
 .info__title-blank {
   border-bottom: solid 3px #6CC6C4;
 }
+.info__row {
+  border-bottom: dotted 1px #515151;
+  
+}
 .date__td {
   margin: 0;
   padding-bottom: 15px;
   width: 150px;
   text-align: left;
-  border-bottom: dotted 1px #515151; border-collapse: collapse;;
+  /* border-bottom: dotted 1px #515151; */
 }
 .info__date {
   margin: 0;
@@ -127,7 +131,7 @@ body {
   line-height: 22px;
 }
 .desc__td {
-  border-bottom: dotted 1px #515151; border-collapse: collapse;;
+  /* border-bottom: dotted 1px #515151; */
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -137,10 +141,34 @@ body {
   font-size: 13px;
   line-height: 20px;
 }
+/* サイドメニュー */
+.nav {
+  width: 260px;
+}
+.side-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side-menu__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 42px;
+  background: linear-gradient(#9CE3E1, #6CC6C4);
+}
+.side-menu__items {
+  padding-left: 2em;
+  line-height: 42px;
+  background-color: #FFFFFF;
+}
+.side-menu__item {
+  
+}
 /* フッター */
 .footer__inner {
-    width: 920px;
-    margin: 0 auto;
+  width: 920px;
+  margin: 0 auto;
 }
 .footer__menu {
   background-color: #6CC6C4;
