@@ -48,8 +48,9 @@ body {
   content: "";
 }
 .menu {
-  /* clear: both; */
-  margin-top: 20px;
+  clear: both;
+  margin-top: 17px;
+  /* padding: 5px 0 5px 0px; */
   border: solid 1px #6CC6C4;
   border-radius: 5px;
   padding : 0;
@@ -58,11 +59,12 @@ body {
   flex-direction: row;
 }
 .menu__item {
-  border: solid 1px #6CC6C4;
+  border-right: solid 1px #6CC6C4;
+  border-left: solid 1px #9AE1DF;
   background: linear-gradient(#9CE3E1, #6CC6C4);
   /* background-color: #6CC6C4; */
   width: 195px;
-  height: 65px;
+  height: 70px;
 }
 .menu__link {
   color: #FFFFFF;
@@ -71,7 +73,13 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
-  line-height: 50px;
+  line-height: 55px;
+}
+.menu__link:hover {
+  opacity: 0.8;
+  /* color: #9AE1DF; */
+  background: linear-gradient(#6CC6C4,#9CE3E1);
+  cursor: pointer;
 }
 .menu__title {
   display: block;
@@ -93,54 +101,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* 新着情報 */
-/*
-.info {
-  margin-top: 5px;
-  width: 600px;
-  padding: 20px;
-  background-color: #FFFFFF;
-}
-.info__table {
-  border-collapse: collapse;
-}
-.info__title {
-  margin: 0;
-  font-size: 16px;
-  line-height: 48px;
-  font-weight: 700;
-  border-bottom: solid 3px #6CC6C4;
-}
-.info__title-blank {
-  border-bottom: solid 3px #6CC6C4;
-}
-.info__row {
-  border-bottom: dotted 1px #515151;
-}
-.date__td {
-  margin: 0;
-  padding-bottom: 15px;
-  width: 150px;
-  text-align: left;
-}
-.info__date {
-  margin: 0;
-  padding-left: 15px;
-  font-size: 12px;
-  line-height: 22px;
-}
-.desc__td {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-.info__desc{
-  margin: 0;
-  font-size: 13px;
-  line-height: 20px;
-}
-*/
 /* 新着情報 */
 .info {
   margin-top: 5px;
@@ -157,8 +117,7 @@ body {
 }
 .info__item {
   float: left;
-  height: 100%;
-  padding: 20px 20px 20px 15px;
+  padding: 10px 20px  18px 10px;
 }
 .info__date {
   margin: 0;
@@ -168,10 +127,10 @@ body {
 }
 .info__desc{
   margin: 0;
-  padding: 10px 20px 10px 150px; 
+  padding: 10px 20px 9px 150px; 
   font-size: 13px;
   line-height: 20px;
-  border-bottom: dotted 1px #515151;
+  border-bottom: dotted 1px #CCCCCC;
 }
 /* サイドメニュー */
 .nav {
@@ -203,9 +162,9 @@ body {
   background-color: #FFFFFF;
 }
 .side-menu__item {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 25px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  line-height: 23px;
   font-size: 14px;
   font-weight: 700;
   border-bottom: solid 1px #6CC6C4;
@@ -240,6 +199,10 @@ body {
   color: #FFFFFF;
   font-size: 13px;
   line-height: 30px;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .footer__info {
   margin: 0;
